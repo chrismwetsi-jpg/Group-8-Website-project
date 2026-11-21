@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Collection schedules, licensed waste collectors and a form to report waste problems in pilot parishes of Kampala.">
+  <title>Collection Information | Kampala Clean Neighborhood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <a href="index.html" class="logo">Kampala Clean Neighborhood</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html" class="active" aria-current="page">Collection Info</a></li>
+          <li><a href="guide.html">Waste Education</a></li>
+          <li><a href="notices.html">Community Notices</a></li>
+          <li><a href="contacts.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Guidelines</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Collection Information</h1>
+    <section id="schedules">
+      <h2>Collection Schedules (Pilot Area)</h2>
+      <p>Place sorted waste at your designated collection point before the scheduled time window.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Waste collection days and points in the pilot area</caption>
+          <thead>
+            <tr>
+              <th scope="col">Division / Parish</th>
+              <th scope="col">Collection Days</th>
+              <th scope="col">Time Window</th>
+              <th scope="col">Designated Collection Point</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nakawa – Bukoto I</td>
+              <td>Tuesday&amp;Friday</td>
+              <td>7:00 AM – 11:00 AM</td>
+              <td>Bukoto Market Stage Junction</td>
+            </tr>
+            <tr>
+              <td>Nakawa – Ntinda</td>
+              <td>Wednesday&amp;Saturday</td>
+              <td>7:30 AM – 12:00 PM</td>
+              <td>Ntinda Stretcher Road Skip</td>
+            </tr>
+            <tr>
+              <td>Central – Kamwokya II</td>
+              <td>Monday &amp;Thursday</td>
+              <td>6:30 AM – 10:30 AM</td>
+              <td>Kira Road Community Point</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="collectors">
+      <h2>Find a Licensed Waste Collector</h2>
+      <p>Contact an authorized service provider in your area for household or business collection arrangements.</p>
+      <img src="images/garbage-truck-collector.jpg" class="banner-img"
+        alt="Waste collector working at the back of a garbage truck" loading="lazy">
+      <div class="grid">
+        <article class="card">
+          <h3>GreenLine Waste Services Ltd</h3>
+          <p><strong>Service Area:</strong> Nakawa Division (Bukoto, Ntinda)</p>
+          <p><strong>Services:</strong> Household sacks, commercial bins, recyclables</p>
+          <p><strong>Phone:</strong> <a href="tel:+256700000111">+256 700 000 111</a></p>
+        </article>
+        <article class="card">
+          <h3>Kampala Eco-Cleaners</h3>
+          <p><strong>Service Area:</strong> Central Division (Kamwokya, Kololo)</p>
+          <p><strong>Services:</strong> Door-to-door collection, organic waste pickup</p>
+          <p><strong>Phone:</strong> <a href="tel:+256700000222">+256 700 000 222</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="report">
+      <h2>Report a Waste Problem</h2>
+      <p>Use this form to report missed collections, overflowing points, or illegal dumping. <em>Note: Reports are
+          reviewed by an administrator and do not guarantee immediate pickup.</em></p>
+      <img src="images/rubbish-bags-street.jpg" class="banner-img" alt="Yellow rubbish bags left on a city pavement"
+        loading="lazy">
+
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="parish">Parish / Specific Location *</label>
+          <input type="text" id="parish" name="parish" placeholder="e.g., Bukoto I, near Kisementi stage" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Issue Category *</label>
+          <select id="category" name="category" required>
+            <option value="">-- Select an issue --</option>
+            <option value="missed">Missed Scheduled Collection</option>
+            <option value="overflow">Overflowing Collection Point</option>
+            <option value="illegal">Suspected Illegal Dumping</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Short Description *</label>
+          <textarea id="description" name="description" rows="4" placeholder="Describe the problem and landmarks..."
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="photo">Upload Photograph (Optional)</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+          <p class="helper-text">Avoid capturing people's faces or private vehicle number plates.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Report for Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy;2026 Kampala Clean Neighborhood </p>
+    </div>
+  </footer>
+</body>
+
+</html>
