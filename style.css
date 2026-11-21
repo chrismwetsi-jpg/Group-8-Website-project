@@ -77,7 +77,7 @@ nav a.active {
 
 .hero {
   position: relative;
-  background-image: linear-gradient(rgba(6, 40, 20, 0.62), rgba(6, 40, 20, 0.62)), url(kampala.jpg);
+  background-image: linear-gradient(rgba(6, 40, 20, 0.62), rgba(6, 40, 20, 0.62)), url(images/kampala.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
